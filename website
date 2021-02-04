@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Page Two</title>
+        <style>
+            .block {
+                background-color: rgb(31, 31, 31);
+                width: 20%;
+                padding: 15px;
+                margin-left: 15%;
+                font-family: 'Courier New', Courier, monospace, sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                border: 2px solid rgb(30, 215, 96);
+                color: azure;
+            }
+
+            .read_block {
+                background-color: rgb(31, 31, 31);
+                width: 20%;
+                padding: 15px;
+                margin-left: 15%;
+                font-family: 'Courier New', Courier, monospace, sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                border: 2px solid rgb(30, 215, 96);
+                color: azure;
+                margin-left: 17%;
+                font-size: 15px;
+            }
+
+            .explanation {
+                padding-left: 6%;
+            }
+
+            .dependancy {
+                color: gold;
+            }
+
+            #Instructions_1 {
+                width: 35%;
+            }
+
+            #Instructions_2 {
+                width: 35%;
+            }
+
+            body {
+                background-color: rgb(17, 17, 17);
+            }
+
+            table {
+                border-collapse: separate;
+                border-spacing: 0 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="block", id="heading">
+            <br>
+            <span style="color: rgb(30, 215, 96);">Spotify</span> History Generator
+            <br>
+            <br>
+        </div>
+
+        <br>
+        <br>
+        <div class="read_block", id="first_paragraph">
+            <br>
+            This web application has no affiliation with Spotify whatsoever and is just a personal project.
+            <br>
+            <br>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="read_block", id="Instructions_1">
+            <span style="color: blueviolet; font-size: 20px;">Dependencies</span>
+            <br>
+            <br>
+            <table>
+                <tr class="entry">
+                    <td class="dependancy">A Spotify account</td>
+                    <td class="explanation">Find your Spotify ID on the top right of the desktop player or in account settings on mobile.</td>
+                </tr>
+                <tr class = "entry">
+                    <td class="dependancy">Your approval</td>
+                    <td class="explanation">We'll need permission from you to access your playlists and currently playing tracks for this to work. None of your data is ever stored for long-term use. </td>
+                </tr>
+                <tr class = "entry">
+                    <td class="dependancy">Constant internet connection</td>
+                    <td class="explanation">History is only recorded when the device playing music is connected to the internet. <br><span style="color: rgb(175, 63, 110);">*</span>Listening in a private session will stop history generation too.</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="read_block", id = "Instructions_2">
+            <div id = "first_step">
+                <p>The first step is to find your Spotify ID and enter it below:</p>
+            </div>
+            <div>
+                <form>
+                    <label for="sID">Spotify ID:</label><br>
+                    <input type="text" id="sID" name="sID" style="width: 200px;"><br>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
